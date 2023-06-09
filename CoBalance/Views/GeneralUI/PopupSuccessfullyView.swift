@@ -1,5 +1,5 @@
 //
-//  PopupSuccessfully.swift
+//  PopupSuccessfullyView.swift
 //  CoBalance
 //
 //  Created by Максим Боталов on 02.06.2023.

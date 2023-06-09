@@ -1,5 +1,5 @@
 //
-//  CategoryCell.swift
+//  CategoryCellView.swift
 //  CoBalance
 //
 //  Created by Максим Боталов on 09.05.2023.

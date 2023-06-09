@@ -1,5 +1,5 @@
 //
-//  MainInfoBanner.swift
+//  MainInfoBannerView.swift
 //  CoBalance
 //
 //  Created by Maxim Botalov on 23.05.2023.

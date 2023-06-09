@@ -1,5 +1,5 @@
 //
-//  NewOperationCategories.swift
+//  СategoriesGridView.swift
 //  CoBalance
 //
 //  Created by Максим Боталов on 03.05.2023.

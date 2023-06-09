@@ -1,5 +1,5 @@
 //
-//  DescriptionOperation.swift
+//  DescriptionOperationView.swift
 //  CoBalance
 //
 //  Created by Максим Боталов on 26.05.2023.

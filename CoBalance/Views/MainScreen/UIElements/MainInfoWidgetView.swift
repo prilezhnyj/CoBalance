@@ -1,5 +1,5 @@
 //
-//  MainWidget.swift
+//  MainInfoWidgetView.swift
 //  CoBalance
 //
 //  Created by Максим Боталов on 27.05.2023.

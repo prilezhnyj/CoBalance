@@ -1,5 +1,5 @@
 //
-//  MainScreenViewModel.swift
+//  MainViewModel.swift
 //  CoBalance
 //
 //  Created by Максим Боталов on 01.05.2023.

@@ -1,5 +1,5 @@
 //
-//  CategoryIcon.swift
+//  CategoryIconView.swift
 //  CoBalance
 //
 //  Created by Максим Боталов on 25.05.2023.

@@ -1,5 +1,5 @@
 //
-//  Warning.swift
+//  PopupWarningView.swift
 //  CoBalance
 //
 //  Created by Максим Боталов on 25.05.2023.

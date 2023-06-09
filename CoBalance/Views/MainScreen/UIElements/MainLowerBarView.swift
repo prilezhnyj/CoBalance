@@ -1,5 +1,5 @@
 //
-//  MainLowerBar.swift
+//  MainLowerBarView.swift
 //  CoBalance
 //
 //  Created by Максим Боталов on 02.05.2023.
