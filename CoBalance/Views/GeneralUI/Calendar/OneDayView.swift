@@ -1,5 +1,5 @@
 //
-//  OneDay.swift
+//  OneDayView.swift
 //  CoBalance
 //
 //  Created by Максим Боталов on 29.05.2023.
