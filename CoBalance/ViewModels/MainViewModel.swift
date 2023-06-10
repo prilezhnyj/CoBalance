@@ -12,7 +12,7 @@ class MainViewModel: ObservableObject {
     
     // MARK: - СВОЙСТВА
     // ПУБЛИЧНЫЕ СВОЙСТВА
-    @Published var operations = [Operation]()
+    @Published var operations = [OperationModel]()
     @Published var selectedDayWeek = Date()
     
     // ПРИВАТНЫЕ СВОЙСТВА
@@ -32,7 +32,7 @@ class MainViewModel: ObservableObject {
     }
     
     // ФУНКЦИЯ УДАЛЕНИЯ ОПЕРАЦИИ
-    func deleteOperation(for operation: Operation) {
+    func deleteOperation(for operation: OperationModel) {
         // Поиск операции
         guard let _ = findItem(item: operation, in: operations) else {
             print("[❌] Операция не найдена")
@@ -44,7 +44,7 @@ class MainViewModel: ObservableObject {
     }
     
     // ОБЩАЯ ФУНКЦИЯ ПОИСКА ОПЕРАЦИИ
-    private func findItem(item searchItem: Operation, in array: [Operation]) -> Int? {
+    private func findItem(item searchItem: OperationModel, in array: [OperationModel]) -> Int? {
         for (index, item) in array.enumerated() {
             if item.id == searchItem.id {
                 return index

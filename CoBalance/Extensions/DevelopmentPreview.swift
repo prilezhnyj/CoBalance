@@ -24,6 +24,6 @@ class DevelopmentPreview {
     let mainVM = MainViewModel()
     let categoryVM = CategoryViewModel()
     
-    let operation = Operation(date: .now, amount: 100, category: Category(type: .expense, title: "Products", logo: "🍞"), description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+    let operation = OperationModel(date: .now, amount: 100, category: CategoryModel(type: .expense, title: "Products", logo: "🍞"), description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
         
 }

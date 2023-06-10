@@ -11,7 +11,7 @@ struct MainDetailedCellView: View {
     
     // MARK: - СВОЙСТВА
     // Входные параметры
-    let currentOperation: Operation
+    let currentOperation: OperationModel
     @Binding var showOperation: Bool
     
     // Объекты среды окружения

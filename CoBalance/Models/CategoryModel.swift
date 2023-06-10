@@ -1,5 +1,5 @@
 //
-//  Category.swift
+//  CategoryModel.swift
 //  CoBalance
 //
 //  Created by Максим Боталов on 30.04.2023.
@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - МОДЕЛЬ КАТЕГОРИИ
-struct Category: Identifiable, Hashable {
+struct CategoryModel: Identifiable, Hashable {
     var id = UUID()
     var type: CategoryType
     var title: String

@@ -11,7 +11,7 @@ struct DescriptionOperationView: View {
     
     // MARK: - СВОЙСТВА
     // Входные параметры
-    var operation: Operation
+    var operation: OperationModel
     var isDetailedView: Bool
     
     // MARK: - ТЕЛО

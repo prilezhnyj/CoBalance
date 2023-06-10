@@ -14,7 +14,7 @@ struct СategoriesGridView: View {
     @Binding var showAllCategories: Bool
     @Binding var addCategory: Bool
     @Binding var operationType: CategoryType
-    @Binding var operationCategory: Category
+    @Binding var operationCategory: CategoryModel
     
     // Объекты среды окружения
     @EnvironmentObject private var categoryViewModel: CategoryViewModel
@@ -60,7 +60,7 @@ struct СategoriesGridView: View {
     }
     
     // Вид категории
-    private func categories(for array: [Category]) -> some View {
+    private func categories(for array: [CategoryModel]) -> some View {
         ForEach(array) { category in
             VStack {
                 // Иконка
@@ -83,7 +83,7 @@ struct СategoriesGridView: View {
             }
             .onAppear {
                 DispatchQueue.main.async {
-                    operationCategory = array.first ?? Category(type: .expense, title: "", logo: "")
+                    operationCategory = array.first ?? CategoryModel(type: .expense, title: "", logo: "")
                 }
             }
         }
@@ -153,7 +153,7 @@ struct СategoriesGridView: View {
 // MARK: - ПРЕДВАРИТЕЛЬНЫЙ ПРОСМОТР
 struct NewOperationCategories_Previews: PreviewProvider {
     static var previews: some View {
-        СategoriesGridView(showAllCategories: .constant(true), addCategory: .constant(false), operationType: .constant(.expense), operationCategory: .constant(Category(type: .expense, title: "", logo: "")))
+        СategoriesGridView(showAllCategories: .constant(true), addCategory: .constant(false), operationType: .constant(.expense), operationCategory: .constant(CategoryModel(type: .expense, title: "", logo: "")))
             .environmentObject(DevelopmentPreview.instance.categoryVM)
             .previewLayout(.sizeThatFits)
             .padding()

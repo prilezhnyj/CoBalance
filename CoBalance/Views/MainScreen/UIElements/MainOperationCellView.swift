@@ -11,7 +11,7 @@ struct MainOperationCellView: View {
     
     // MARK: - СВОЙСТВА
     // Входные параметры
-    var operation: Operation
+    var operation: OperationModel
     
     // MARK: - Тело
     var body: some View {

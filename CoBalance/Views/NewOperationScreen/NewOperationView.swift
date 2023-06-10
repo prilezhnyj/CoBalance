@@ -13,7 +13,7 @@ struct NewOperationView: View {
     // Входные параметры
     @State private var operationType: CategoryType = .expense
     @State private var operationAmount: String = ""
-    @State private var operationCategory: Category = .init(type: .expense, title: "Title", logo: "Logo")
+    @State private var operationCategory: CategoryModel = .init(type: .expense, title: "Title", logo: "Logo")
     @State private var operationDescription: String = ""
     
     // Объекты среды окружения

@@ -11,7 +11,7 @@ struct CategoryCellView: View {
     
     // MARK: - СВОЙСТВА
     // Входные параметры
-    var category: Category
+    var category: CategoryModel
     var action: () -> Void
     
     // Объекты среды окружения

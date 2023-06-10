@@ -12,7 +12,7 @@ class MainInfoWidgetViewModel: ObservableObject {
     
     // MARK: - СВОЙСТВА
     // ПУБЛИЧНЫЕ СВОЙСТВА
-    @Published var operations = [Operation]()
+    @Published var operations = [OperationModel]()
     @Published var currentMonth = ""
     
     // ПРИВАТНЫЕ СВОЙСТВА

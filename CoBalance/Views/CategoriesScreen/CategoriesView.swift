@@ -134,7 +134,7 @@ struct CategoriesView: View {
     
     // MARK: - ФУНКЦИИ && UI
     // Фильтрация всех категории на типы
-    private func filteringList(for categories: [Category]) -> some View {
+    private func filteringList(for categories: [CategoryModel]) -> some View {
         Section {
             ForEach(categories) { category in
                 CategoryCellView(category: category) {

@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 class CategoryViewModel: ObservableObject {
-    @Published var categories = [Category]()
+    @Published var categories = [CategoryModel]()
     
     // ПРИВАТНЫЕ СВОЙСТВА
     private var subscribers = Set<AnyCancellable>()
@@ -41,7 +41,7 @@ class CategoryViewModel: ObservableObject {
     func addCategory(type: CategoryType, title: String, logo: String) {}
     
     // Функция удаления категории
-    func deleteCategory(for category: Category) {
+    func deleteCategory(for category: CategoryModel) {
         // Поиск операции
         guard let deleteCategory = findItem(item: category, in: categories) else {
             print("[❌] Операция не найдена")
@@ -58,7 +58,7 @@ class CategoryViewModel: ObservableObject {
     }
     
     // Функция поиска категории
-    private func findItem(item searchItem: Category, in array: [Category]) -> Int? {
+    private func findItem(item searchItem: CategoryModel, in array: [CategoryModel]) -> Int? {
         for (index, item) in array.enumerated() {
             if item.id == searchItem.id {
                 return index

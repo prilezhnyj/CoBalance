@@ -12,7 +12,7 @@ struct MainHeaderListView: View {
     // MARK: - СВОЙСТВА
     // Входные параметры
     var header: String
-    var operations: [Operation]
+    var operations: [OperationModel]
     
     // MARK: - ТЕЛО
     var body: some View {

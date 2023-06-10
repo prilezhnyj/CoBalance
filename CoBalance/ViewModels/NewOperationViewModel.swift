@@ -14,7 +14,7 @@ class NewOperationViewModel: ObservableObject {
     private let dataService = DataService.instance
     
     // MARK: - SAVING THE OPERATION AND TRANSFERRING IT TO A FAKE DATE
-    func savedOperation(type: CategoryType, amount: String, category: Category, description: String) {
+    func savedOperation(type: CategoryType, amount: String, category: CategoryModel, description: String) {
 //        guard let amountFloat = Float(amount) else { return }
 //        let operation = Operation(date: .now, amount: amountFloat, category: category, description: description)
     }

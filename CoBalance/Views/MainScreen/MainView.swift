@@ -19,7 +19,7 @@ struct MainView: View {
     @State private var newOperation = false
     
     // Временая переменная
-    @State private var currentOperation = Operation(date: .now, amount: 100, category: .init(type: .expense, title: "Title", logo: "Logo"), description: "")
+    @State private var currentOperation = OperationModel(date: .now, amount: 100, category: .init(type: .expense, title: "Title", logo: "Logo"), description: "")
     
     
     // MARK: - ТЕЛО
@@ -59,7 +59,7 @@ struct MainView: View {
     
     // MARK: - ФУНКЦИИ && UI
     // Фильтрация всех операции по типу
-    private func filteringList(for operations: [Operation], header: String) -> some View {
+    private func filteringList(for operations: [OperationModel], header: String) -> some View {
         Section {
             ForEach(operations) { operation in
                 MainOperationCellView(operation: operation)
