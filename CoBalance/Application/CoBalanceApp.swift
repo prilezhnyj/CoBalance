@@ -14,6 +14,9 @@ struct CoBalanceApp: App {
     @StateObject private var mainScreenViewModel = MainViewModel()
     @StateObject private var categoryViewModel = CategoryViewModel()
     
+    // MARK: - РЕГИСТРАЦИЯ FIREBASE
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     // MARK: - ТЕЛО
     var body: some Scene {
         WindowGroup {
